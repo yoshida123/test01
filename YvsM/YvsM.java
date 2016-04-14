@@ -13,7 +13,7 @@ public class YvsM {
 		m.status();
 		
 		while(y.hp > 0 & m.hp > 0){		//勇者かつ魔王のHPが0以上の間 while で回す
-			act = y.menu(m);		//魔王の m
+			act = y.menu(m);		//魔王の m		(戻り値を受け取る)
 			if (act) {
 				m.randomNumber(y);	//勇者の y
 			}
@@ -25,4 +25,5 @@ public class YvsM {
 		}
 	}
 
+	
 }
